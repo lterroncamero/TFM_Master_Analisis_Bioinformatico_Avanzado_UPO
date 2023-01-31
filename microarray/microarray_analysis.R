@@ -1,12 +1,12 @@
 #!/usr/bin/env Rscript
 
  #Load libraries
- library(limma)
+ library("limma")
  library("HsAgilentDesign026652.db")
  library("annotate")
  library("AnnotationDbi")
- library(org.Hs.eg.db)
- library (ggrepel)
+ library("org.Hs.eg.db")
+ library ("ggrepel")
 
 array_agilent_matrix<-function(targetinfo,label){
   #Set-up
@@ -54,28 +54,28 @@ comparative_array<-function(data,treatment,level1,level2,covariate){
 }
   
 Volcano_plot<-function(data,file,main){ 
-  data$Gene<-rownames(data)
-  data$Threshold<-"nDEG"
-  data[data$adj.P.Val <= 0.05,"Threshold"]<-"DEG"
-  ##Top20
-  real_DE<-data[data$adj.P.Val<=0.05,]
-  selected_FC<-head(real_DE[order(abs(real_DE$logFC),decreasing = T),], 20)
-  mycolors <- c("purple", "gray")
-  names(mycolors) <- c("DEG", "nDEG")
-  pdf("Vocano_plot_LH7_vs_LH2_purple.pdf",paper="a4")
-    g = ggplot(data=data, aes(x=logFC, y=-log10(adj.P.Val), colour=Threshold)) + coord_cartesian(xlim = c(-6, 6 )) +
-    geom_point(alpha=0.4, size=1.75) +
-   xlab("log2 fold change") + ylab("-log10 adj.P.Val") + theme_minimal() + scale_colour_manual(values = mycolors) +
-    geom_text_repel(data=selected_FC, aes(label=Gene),colour="black",size=3) + ggtitle("LH+7 vs LH+2") + theme(plot.title = element_text(hjust = 0.5)) #adding text for the top1 20 genes
-    plot(g)
-  dev.off()
-  png("Vocano_plot_LH7_vs_LH2_purple.png", res=300, width=2000, height=2000)
-    g = ggplot(data=data, aes(x=logFC, y=-log10(adj.P.Val), colour=Threshold)) + coord_cartesian(xlim = c(-6, 6 )) +
-    geom_point(alpha=0.4, size=1.75) +
-    xlab("log2 fold change") + ylab("-log10 P.Val") + theme_minimal() + scale_colour_manual(values = mycolors) +
-    geom_text_repel(data=selected_FC, aes(label=Gene),colour="black",size=3) + ggtitle("LH+7 vs LH+2") + theme(plot.title = element_text(hjust = 0.5)) #adding text for the top1 20 genes
-    plot(g)
-  dev.off()
+ data$Gene<-rownames(data)
+ data$Threshold<-"nDEG"
+ data[data$adj.P.Val <= 0.05,"Threshold"]<-"DEG"
+ ##Top20
+ real_DE<-data[data$adj.P.Val<=0.05,]
+ selected_FC<-head(real_DE[order(abs(real_DE$logFC),decreasing = T),], 20)
+ mycolors <- c("purple", "gray")
+ names(mycolors) <- c("DEG", "nDEG")
+ pdf("Vocano_plot_LH7_vs_LH2_purple.pdf",paper="a4")
+  g = ggplot(data=data, aes(x=logFC, y=-log10(adj.P.Val), colour=Threshold)) + coord_cartesian(xlim = c(-6, 6 )) +
+  geom_point(alpha=0.4, size=1.75) +
+  xlab("log2 fold change") + ylab("-log10 adj.P.Val") + theme_minimal() + scale_colour_manual(values = mycolors) +
+  geom_text_repel(data=selected_FC, aes(label=Gene),colour="black",size=3) + ggtitle("LH+7 vs LH+2") + theme(plot.title = element_text(hjust = 0.5)) #adding text for the top1 20 genes
+  plot(g)
+ dev.off()
+ png("Vocano_plot_LH7_vs_LH2_purple.png", res=300, width=2000, height=2000)
+  g = ggplot(data=data, aes(x=logFC, y=-log10(adj.P.Val), colour=Threshold)) + coord_cartesian(xlim = c(-6, 6 )) +
+  geom_point(alpha=0.4, size=1.75) +
+  xlab("log2 fold change") + ylab("-log10 P.Val") + theme_minimal() + scale_colour_manual(values = mycolors) +
+  geom_text_repel(data=selected_FC, aes(label=Gene),colour="black",size=3) + ggtitle("LH+7 vs LH+2") + theme(plot.title = element_text(hjust = 0.5)) #adding text for the top1 20 genes
+  plot(g)
+ dev.off()
 }
 
 
