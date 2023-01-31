@@ -50,7 +50,7 @@ comparative_array<-function(data,treatment,level1,level2,covariate){
   
   rownames(probeset.list) <- NULL
   colnames(probeset.list)[which(names(probeset.list) == "Group.1")] <- "Gene"
-  write.table(probeset.list, paste("Matriz_nor",level1,"vs",level2.xls",sep=""), sep="\t", quote=FALSE,col.names = NA)
+  write.table(probeset.list, paste("Matriz_nor",level1,"vs",level2,".xls",sep=""), sep="\t", quote=FALSE,col.names = NA)
 }
   
 Volcano_plot<-function(data,file,main){ 
