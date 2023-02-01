@@ -1,16 +1,16 @@
-# TFM Master Analisis Bioinformatico Avanzado UPO
+<h1 align="center"> TFM Master Analisis Bioinformatico Avanzado UPO</h1>
 
-## Unravelling the molecular mechanisms in the early steps of the implantation process
+<h2 align="center"> Unravelling the molecular mechanisms in the early steps of the implantation process<h6 align="justify">
 
 ### Alumna: Laura C. Terrón Camero
 
-### Cotutores: Eduardo Andrés-León, Signe Altmäe
+### Co-tutores: Eduardo Andrés-León, Signe Altmäe
 
-#### Abstract
+#### Abstract ####
 
 > ##### STUDY QUESTION: Which genes in the luminal epithelium (the first maternal cellular lining in the uterus to contact with embryo) interact in the molecular dialogue with the implanting embryo? How is this molecular embryo-endometrium crosstalk regulated in the case of embryonal chromosomal abnormalities?
 
-> ##### SUMMARY ANSWER: A set of molecules are expressed on the endometrial lining and implantation-competent blastocyst that could interact on the embryo-endometrium crosstalk, and this molecular dialogue seems to be dysregulated in the case of embryonal chromosomal abnormalities such as trisomies in chromosomes 7, 11, 15, 21 and 22. 
+> ##### SUMMARY ANSWER: A set of molecules are expressed on the endometrial lining and implantation-competent blastocyst that could interact on the embryo-endometrium crosstalk, and this molecular dialogue seems to be dysregulated in the case of embryonal chromosomal abnormalities such as trisomies in chromosomes 7, 11, 15, 21 and 22.
 
 > ##### WHAT IS KNOWN ALREADY: The molecular dialogue that takes place between the endometrial layer interacting with the more superficial embryonic cell layer is still poorly understood due to ethical and technical reasons, leaving the early stage of the human embryo implantation process mostly unexplored.
 
@@ -26,5 +26,19 @@
 
 > #####  WIDER IMPLICATIONS OF THE FINDINGS: Our study provides novel insights into the so-far-understudied molecular interaction between the embryo and the endometrium in the first steps of the implantation process in humans. Knowledge of the DEGs and their possible functions in receptive luminal epithelial cells and chromosomally altered embryos compared to trophoblastic cells of euploid embryos, is fundamental to understanding human reproduction and the possible causes of implantation failure and infertility
 
+<h2 align="center"> Dependencies </h2>
+  
+#### For RNA-seq
+  
+* [miARma-seq](https://github.com/eandresleon/miARma-seq)
+* [R](https://www.r-project.org/) version 4.1.2 (2021-11-01)
+* [RStudio-Posit](https://posit.co/) version 2021.09.2 Build 382
+* R packages:
+  
+  
+  
+  
+  
+  
 
 
