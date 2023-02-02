@@ -52,6 +52,9 @@
   * [dplyr](https://www.r-project.org/nosvn/pandoc/dplyr.html)
   * [WGCNA](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/)
   * [ComBat](https://rdrr.io/bioc/sva/man/ComBat.html)
+  * [rbioapi](https://cran.r-project.org/web/packages/rbioapi/index.html)
+  * [STRINGdb](https://www.bioconductor.org/packages/release/bioc/html/STRINGdb.html)
+  * [igraph] (https://igraph.org/)
   
   
   
