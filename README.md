@@ -27,13 +27,31 @@
 > #####  WIDER IMPLICATIONS OF THE FINDINGS: Our study provides novel insights into the so-far-understudied molecular interaction between the embryo and the endometrium in the first steps of the implantation process in humans. Knowledge of the DEGs and their possible functions in receptive luminal epithelial cells and chromosomally altered embryos compared to trophoblastic cells of euploid embryos, is fundamental to understanding human reproduction and the possible causes of implantation failure and infertility
 
 <h2 align="center"> Dependencies </h2>
-  
-#### For RNA-seq
-  
+    
 * [miARma-seq](https://github.com/eandresleon/miARma-seq)
 * [R](https://www.r-project.org/) version 4.1.2 (2021-11-01)
 * [RStudio-Posit](https://posit.co/) version 2021.09.2 Build 382
 * R packages:
+  * [limma](https://bioconductor.org/packages/release/bioc/html/limma.html)
+  * [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
+  * [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)
+  * [genefilter](https://bioconductor.org/packages/release/bioc/html/genefilter.html)
+  * [ggrepel](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html)
+  * [ggfortify](https://cran.r-project.org/web/packages/ggfortify/index.html)
+  * [cluster](https://cran.r-project.org/web/packages/cluster/index.html)
+  * [factoextra](https://cran.r-project.org/web/packages/factoextra/index.html)
+  * [ggplot2](https://ggplot2.tidyverse.org/)
+  * [M3C](https://www.bioconductor.org/packages/release/bioc/html/M3C.html)
+  * [AnnotationDbi](https://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html)
+  * [xlsx](https://cran.r-project.org/web/packages/xlsx/index.html)
+  * [clusterProfiler](https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html
+  * [png](https://cran.r-project.org/web/packages/png/index.html)
+  * [curl](https://cran.r-project.org/web/packages/curl/vignettes/intro.html)
+  * [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html)
+  * [tidyr](https://tidyr.tidyverse.org/)
+  * [dplyr](https://www.r-project.org/nosvn/pandoc/dplyr.html)
+  * [WGCNA](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/)
+  * [ComBat](https://rdrr.io/bioc/sva/man/ComBat.html)
   
   
   
