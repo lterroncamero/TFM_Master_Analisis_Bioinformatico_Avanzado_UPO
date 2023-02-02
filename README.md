@@ -44,7 +44,7 @@
   * [M3C](https://www.bioconductor.org/packages/release/bioc/html/M3C.html)
   * [AnnotationDbi](https://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html)
   * [xlsx](https://cran.r-project.org/web/packages/xlsx/index.html)
-  * [clusterProfiler](https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html
+  * [clusterProfiler](https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html)
   * [png](https://cran.r-project.org/web/packages/png/index.html)
   * [curl](https://cran.r-project.org/web/packages/curl/vignettes/intro.html)
   * [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html)
